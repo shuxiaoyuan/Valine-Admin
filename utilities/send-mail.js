@@ -78,7 +78,7 @@ exports.send = (currentComment, parentComment)=> {
                             ptext: parentComment.get('comment'),
                             name: currentComment.get('nick'),
                             text: currentComment.get('comment'),
-                            url: process.env.SITE_URL + currentComment.get('url') + "#" + currentComment.get('pid')
+                            url: process.env.SITE_URL + currentComment.get('url')
                         });
     let mailOptions = {
         from: '"' + process.env.SENDER_NAME + '" <' + process.env.SMTP_USER + '>',
